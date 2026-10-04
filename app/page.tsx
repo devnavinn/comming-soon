@@ -1,0 +1,60 @@
+import Countdown from "./Countdown";
+import NotifyForm from "./NotifyForm";
+
+const features = [
+  { icon: "🧀", title: "Artisan selection", text: "Hand-picked cheeses from small dairies and master cheesemakers." },
+  { icon: "🚚", title: "Fresh delivery", text: "Packed cold and shipped fast, so every wedge arrives at its best." },
+  { icon: "🎁", title: "Gift boxes", text: "Curated boards and hampers for parties, holidays and cheese lovers." },
+];
+
+export default function Home() {
+  return (
+    <main>
+      <div className="holes" aria-hidden="true">
+        <span /><span /><span /><span /><span /><span />
+      </div>
+
+      <header className="nav">
+        <span className="logo">Chee<b>Cheese</b></span>
+        <a href="#notify" className="nav-link">Get early access</a>
+      </header>
+
+      <section className="hero">
+        <p className="badge">Online store · Coming soon</p>
+        <h1>
+          Something <em>cheesy</em> is on its way.
+        </h1>
+        <p className="lead">
+          CheeCheese is a new online cheese shop — artisan cheeses, perfect pairings and gift boxes,
+          delivered fresh to your door.
+        </p>
+
+        <Countdown />
+
+        <div id="notify" className="notify-wrap">
+          <NotifyForm />
+          <p className="fine">Be first in line — subscribers get 15% off their first order.</p>
+        </div>
+      </section>
+
+      <section className="features">
+        {features.map((f) => (
+          <article key={f.title} className="feature">
+            <span className="feature-icon">{f.icon}</span>
+            <h3>{f.title}</h3>
+            <p>{f.text}</p>
+          </article>
+        ))}
+      </section>
+
+      <footer className="footer">
+        <span>© {new Date().getFullYear()} CheeCheese. All rights reserved.</span>
+        <nav>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="mailto:hello@cheecheese.com">Contact</a>
+        </nav>
+      </footer>
+    </main>
+  );
+}
