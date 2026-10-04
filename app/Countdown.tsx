@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 // Change this to your real launch date.
-const LAUNCH_DATE = new Date("2026-12-01T00:00:00");
+const LAUNCH_DATE = new Date("2026-11-20T00:00:00");
 
 function timeLeft() {
   const diff = Math.max(0, LAUNCH_DATE.getTime() - Date.now());
