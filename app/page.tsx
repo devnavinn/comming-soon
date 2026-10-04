@@ -1,5 +1,4 @@
 import Countdown from "./Countdown";
-import NotifyForm from "./NotifyForm";
 
 const features = [
   { icon: "🧀", title: "Artisan selection", text: "Hand-picked cheeses from small dairies and master cheesemakers." },
@@ -16,7 +15,6 @@ export default function Home() {
 
       <header className="nav">
         <span className="logo">Chee<b>Cheese</b></span>
-        <a href="#notify" className="nav-link">Get early access</a>
       </header>
 
       <section className="hero">
@@ -30,11 +28,6 @@ export default function Home() {
         </p>
 
         <Countdown />
-
-        <div id="notify" className="notify-wrap">
-          <NotifyForm />
-          <p className="fine">Be first in line — subscribers get 15% off their first order.</p>
-        </div>
       </section>
 
       <section className="features">
