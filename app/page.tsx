@@ -7,6 +7,10 @@ const features = [
 export default function Home() {
   return (
     <main>
+      <div className="construction" role="status">
+        🚧 <strong>Under construction</strong> — our store is being built. Check back soon! 🚧
+      </div>
+
       <div className="holes" aria-hidden="true">
         <span /><span /><span /><span /><span /><span />
       </div>

@@ -92,3 +92,16 @@ main { position: relative; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 .footer nav { display: flex; gap: 18px; }
 .footer a { color: var(--muted); text-decoration: none; }
 .footer a:hover { color: var(--rind); }
+
+/* Under construction banner */
+.construction {
+  margin: 16px 0 0;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--ink);
+  background: repeating-linear-gradient(-45deg, var(--cheese) 0 18px, #ffe08a 18px 36px);
+  border: 2px solid var(--ink);
+  box-shadow: 0 4px 0 var(--ink);
+}
