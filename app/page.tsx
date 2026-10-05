@@ -1,5 +1,3 @@
-import Countdown from "./Countdown";
-
 const features = [
   { icon: "🧀", title: "Artisan selection", text: "Hand-picked cheeses from small dairies and master cheesemakers." },
   { icon: "🚚", title: "Fresh delivery", text: "Packed cold and shipped fast, so every wedge arrives at its best." },
@@ -26,8 +24,6 @@ export default function Home() {
           CheeCheese is a new online cheese shop — artisan cheeses, perfect pairings and gift boxes,
           delivered fresh to your door.
         </p>
-
-        <Countdown />
       </section>
 
       <section className="features">
